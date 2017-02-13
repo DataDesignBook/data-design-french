@@ -13,7 +13,7 @@ document.write('\
     <link rel="stylesheet" type="text/css" href="../theme/html/html.css">\
 \
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"> </script>\
-    <script src="../js/retina.min.js" type="text/javascript"> </script>\
-    <script src="../js/data-design.js" type="text/javascript"> </script>\
+    <script src="../french/js/retina.min.js" type="text/javascript"> </script>\
+    <script src="../french/js/data-design.js" type="text/javascript"> </script>\
   </head>\
 ');
