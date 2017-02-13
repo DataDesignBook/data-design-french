@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <script src="../js/htmlHead.js"></script>
+  <script src="../french/js/htmlHead.js"></script>
 
   <body data-type="book">
-    <script src="../js/htmlNavigation.js"></script>
+    <script src="../french/js/htmlNavigation.js"></script>
     <div class="navigation">
       <ul>
         <li id="previous_page">
@@ -20,7 +20,7 @@
 
 <section class="green" data-type="chapter">
 <header>
- <div class="icon"><img src="../images/sections/PrintWeb-icon-paper-smartphone-fr.png" /></div>
+ <div class="icon"><img src="../french/images/sections/PrintWeb-icon-paper-smartphone-fr.png" /></div>
  <p>Chapitre 16</p>
  <h1>Imprim&eacute; vs web, statique vs interactif</h1>
  <p data-type="author">Par Sarah Rigdon<br>
@@ -67,9 +67,9 @@
 
 <p>Les appareils mobiles doivent aussi &ecirc;tre pris en compte puisque de plus en plus de gens les utilisent pour parcourir le web.  Garder en t&ecirc;te que pr&egrave;s du deux tiers des propri&eacute;taires de t&eacute;l&eacute;phones cellulaires utilisent maintenant leur t&eacute;l&eacute;phone pour naviguer sur internet et que pour vingt pourcent d&rsquo;entre eux, c&rsquo;est leur principal outil pour y acc&eacute;der.  Il est difficile de bien voir les d&eacute;tails sur un petit &eacute;cran, mais vous ne voulez pas que vos utilisateurs aient &agrave; plisser les yeux pour comprendre votre graphique!   Pour &eacute;viter cela, il est possible de construire des graphiques r&eacute;actifs -- qui changent automatiquement leur aspect en fonction des dimensions de l&rsquo;&eacute;cran de l&rsquo;utilisateur -- ou de cr&eacute;er un graphique diff&eacute;rent sp&eacute;cialement pour les appareils mobiles.  Compte tenu de ce ph&eacute;nom&egrave;ne, c&rsquo;est quelque chose que vous devez consid&eacute;rer quand vous publiez sur le web.</p>
 
-<figure><img alt="Pie chart on different width screens" src="../images/sections/PrintWeb-responsive-pie-on-mobile-fr.png" /></figure>
+<figure><img alt="Pie chart on different width screens" src="../french/images/sections/PrintWeb-responsive-pie-on-mobile-fr.png" /></figure>
 
-<figure><img alt="Bar chart on mobile device" src="../images/sections/PrintWeb-responsive-bar-on-mobile-fr.png" /></figure>
+<figure><img alt="Bar chart on mobile device" src="../french/images/sections/PrintWeb-responsive-bar-on-mobile-fr.png" /></figure>
 
 <p>Plusieurs appareils mobiles (et de plus en plus de moniteurs d&rsquo;ordinateurs de bureau et d&rsquo;ordinateurs portables) offrent un &eacute;cran &agrave; grande r&eacute;solution souvent appel&eacute; &eacute;cran Retina.  Une image statique cr&eacute;&eacute;e avec une r&eacute;solution web standard de 72 ppp (points par pouce ou dots per inches -dpi- ) sera un peu floue sur un &eacute;cran r&eacute;tina.  Vous aurez besoin de cr&eacute;er des versions de meilleure r&eacute;solution si vous voulez que vos images soient nettes sur, par exemple, un iPad nouveau mod&egrave;le.  Vous pouvez aussi cr&eacute;er vos images en utilisant des polices web et des &eacute;l&eacute;ments graphiques vectoriels (SVG).  Ainsi, vos images seront toujours impeccables peu importe la r&eacute;solution de l&rsquo;&eacute;cran.  Toutefois, il faut savoir que certains navigateurs web plus anciens (notamment Internet Explorer 8 et moins) ne supportent pas le format SVG.</p>
 
@@ -78,7 +78,7 @@
 
 <p>SVG vient de Scalable Vecteur Graphic.  En fran&ccedil;ais, on parle de graphiques vectoriels adaptables.   Ce format permet l&rsquo;affichage d&rsquo;images pouvant &ecirc;tre redimensionn&eacute;es sans pixellisation.  En effet, ce sont des des expressions math&eacute;matiques qui permettent de dessiner les diff&eacute;rents traits qui composent l&rsquo;image.  Les images vectorielles, contrairement aux images bitmap (aussi connus sous le nom de graphiques &agrave; trames ou raster graphics) qui utilisent des bits de couleurs sp&eacute;cifiques associ&eacute;s &agrave; diff&eacute;rentes r&eacute;gions d&rsquo;une image, seront impeccables m&ecirc;me lorsqu&rsquo;une tr&egrave;s grande taille d&rsquo;image est demand&eacute;e.  Les images bitmap seront floues lorsque regard&eacute;es &agrave; une grande r&eacute;solution, mais elles sont n&eacute;anmoins parfois n&eacute;cessaires pour afficher des combinaisons de couleurs complexes.  Une photographie est un bon exemple d&rsquo;image bitmap et un simple cercle est un bon exemple d&rsquo;une image qui peut facilement &ecirc;tre dessin&eacute;e en format vectoriel.</p>
 
-<figure><img alt="Bitmap vs. vector images" src="../images/sections/PrintWeb-vector-vs-bitmap-fr.png" /></figure>
+<figure><img alt="Bitmap vs. vector images" src="../french/images/sections/PrintWeb-vector-vs-bitmap-fr.png" /></figure>
 
 <p>Plusieurs outils pour cr&eacute;er des graphiques interactifs pour le web (comme <a href="http://d3js.org/" target="_blank">D3.js</a>) utilisent le format SVG pour la visualisation.  Cependant, la plupart des graphiques statiques sont publi&eacute;s en utilisant un format bitmap sous forme de JPEG ou de PNG.</p>
 </div>
@@ -95,13 +95,13 @@
 
 <p>Ces graphiques ne sont pas n&eacute;cessairement interactifs, m&ecirc;me si les lecteurs peuvent les agrandir.  Puisque le graphique lui-m&ecirc;me ne change pas,  les consid&eacute;rations li&eacute;es &agrave; la disposition sont moins critiques mais s&rsquo;appliquent n&eacute;anmoins.  Le fait d&rsquo;&ecirc;tre publi&eacute;s sur le web donne aux graphiques statiques une composante interactive que les graphiques imprim&eacute;s ne poss&egrave;dent pas.  Par exemple, ils peuvent &ecirc;tre li&eacute;s &agrave; leur source de donn&eacute;es, &agrave; d&rsquo;autres graphiques ou &agrave; une autre page web pertinente.  Les &eacute;crans des appareils portables constituent aussi un d&eacute;fi pour les graphiques statiques particuli&egrave;rement parce que leur disposition ne change pas dynamiquement pour accommoder les &eacute;crans plus petits ou les diff&eacute;rents ratios largeur-hauteur.</p>
 
-<figure><img alt="Complex map on mobile device" src="../images/sections/PrintWeb-map-detail-loss-on-mobile-fr.png" />
+<figure><img alt="Complex map on mobile device" src="../french/images/sections/PrintWeb-map-detail-loss-on-mobile-fr.png" />
 <figcaption>Les &eacute;tiquettes de texte et les d&eacute;tails visuels qui sont clairs sur grand &eacute;cran sont parfois difficiles ou impossibles &agrave; lire sur un appareil mobile.</figcaption>
 </figure>
 
 <p>M&ecirc;me si les liens URL affich&eacute;s sur une image statique ne peuvent &ecirc;tre directement cliqu&eacute;s, il arrive fr&eacute;quemment que des &eacute;diteurs consciencieux reproduisent ces liens directement sous l&rsquo;image pour que les lecteurs puissent facilement acc&eacute;der aux donn&eacute;es source.</p>
 
-<figure><img alt="Citing sources" src="../images/sections/PrintWeb-source-link-fr.png" /></figure>
+<figure><img alt="Citing sources" src="../french/images/sections/PrintWeb-source-link-fr.png" /></figure>
 
 <h3>Peser le besoin d&rsquo;interactivit&eacute;</h3>
 
@@ -111,7 +111,7 @@
 
 <p>Par exemple, prenez le graphe &agrave; barres suivant:</p>
 
-<figure><img alt="Pointless hover" src="../images/sections/PrintWeb-data-labels-hover-vs-default-fr.png" /></figure>
+<figure><img alt="Pointless hover" src="../french/images/sections/PrintWeb-data-labels-hover-vs-default-fr.png" /></figure>
 
 <p>Dans la figure ci-dessus, les &eacute;tiquettes interactives ne sont pas n&eacute;cessaires pour la compr&eacute;hension des lecteurs.  Les &eacute;tiquettes peuvent &ecirc;tre ajout&eacute;es sur le graphique ce qui rend ce dernier plus facile &agrave; comprendre et demande moins d&rsquo;effort de la part du lecteur.  Quand vous pr&eacute;sentez un petit graphique simple avec une seule variable, l&rsquo;interactivit&eacute; peut faire d&eacute;vier votre message.</p>
 
@@ -121,7 +121,7 @@
 
 <p>Les graphiques interactifs peuvent ajouter beaucoup de valeur lorsque vous avez un jeu de donn&eacute;es riche. Par exemple, disons que vous d&eacute;sirez savoir comment plusieurs groupes de consommateurs boivent leur caf&eacute;. Un graphique interactif pourrait vous permettre de filtrer par groupe d&eacute;mographique et ainsi explorer les diff&eacute;rents patterns de consommation.</p>
 
-<figure><img alt="Interactive exploration" src="../images/sections/PrintWeb-interactive-exploration-line-fr.png" /></figure>
+<figure><img alt="Interactive exploration" src="../french/images/sections/PrintWeb-interactive-exploration-line-fr.png" /></figure>
 
 <p>Dans les graphiques statiques, vous ne pouvez pas utiliser d&rsquo;effets visuels comme du mouvement ou un changement de couleur pour transmettre votre message.  D&rsquo;un autre c&ocirc;t&eacute;, m&ecirc;me si les graphiques interactifs peuvent incorporer des effets visuels pour montrer des tendances dans le temps, ils am&egrave;nent parfois leur lot de difficult&eacute;s techniques.  Soyez conscient de la compatibilit&eacute; entre les ordinateurs et les navigateurs.  Certaines des visualisations interactives les plus complexes demandent beaucoup de puissance de calcul et peuvent &ecirc;tre lentes sur des machines moins puissantes comme des t&eacute;l&eacute;phones intelligents.  Les visualisations cr&eacute;&eacute;es avec Flash ne s&rsquo;afficheront pas sur les iPhones ou iPads et celles cr&eacute;&eacute;es en SVG ne fonctionneront pas dans Internet Explorer 8 et moins.  Les visualisations interactives construites pour un ordinateur avec souris pourraient &ecirc;tre difficiles voire impossibles &agrave; utiliser sur un appareil &agrave; &eacute;cran tactile si les cr&eacute;ateurs ont oubli&eacute; de tester et d&rsquo;optimiser les graphiques pour les interactions tactiles.</p>
 

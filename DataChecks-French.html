@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <script src="../js/htmlHead.js"></script>
+  <script src="../french/js/htmlHead.js"></script>
 
   <body data-type="book">
-    <script src="../js/htmlNavigation.js"></script>
+    <script src="../french/js/htmlNavigation.js"></script>
     <div class="navigation">
       <ul>
         <li id="previous_page">
@@ -20,7 +20,7 @@
 
 <section class="red" data-type="chapter">
 <header>
- <div class="icon"><img src="../images/sections/DataChecks-icon-inspect-fr.png" /></div>
+ <div class="icon"><img src="../french/images/sections/DataChecks-icon-inspect-fr.png" /></div>
  <p>Chapitre 9</p>
  <h1>V&eacute;rification des donn&eacute;es</h1>
  <p data-type="author">Par Ian Tebbutt<br>
@@ -94,11 +94,11 @@
 
 <p>Si vous &ecirc;tes dans la position privil&eacute;gi&eacute;e de pouvoir contr&ocirc;ler la mani&egrave;re dont les informations sont recueillies, vous avez un avantage car la validation la plus facile est celle qui peut se faire d&egrave;s que les donn&eacute;es sont saisies.  On appelle cela la validation en entr&eacute;e, <a class="glossterm" target="_blank" href="glossary01.html#check-front-end">la validation frontale</a> ou la validation cot&eacute;-client car elle se produit au moment o&ugrave; l&rsquo;utilisateur entre la donn&eacute;e et avant que celle-ci ne soit envoy&eacute;e vers la base de donn&eacute;es. C&rsquo;est commun&eacute;ment fait en s&rsquo;assurant que l&rsquo;application de r&eacute;cup&eacute;ration des donn&eacute;es ou la page web avec formulaire soient con&ccedil;ues de mani&egrave;re &agrave; n&rsquo;accepter que des valeurs valides. Vous avez certainement d&eacute;j&agrave; rencontr&eacute; ce type de validation si vous avez d&eacute;j&agrave; eu &agrave; remplir des formulaires sur le web.</p>
 
-<figure><img alt="Form validation on the web" src="../images/sections/DataChecks-front-end-check-phone-number-fr.png" /></figure>
+<figure><img alt="Form validation on the web" src="../french/images/sections/DataChecks-front-end-check-phone-number-fr.png" /></figure>
 
 <p>Par exemple, il arrive souvent que les r&eacute;gions et pays soient &agrave; s&eacute;lectionner depuis une liste.  Dans ce cas, le choix du pays peut limiter automatiquement le choix de la r&eacute;gion ou autre.  On s&rsquo;assure ainsi d&rsquo;avoir des r&eacute;gions qui appartiennent au bon pays.</p>
 
-<figure><img alt="Pays and state drop down lists" src="../images/sections/DataChecks-front-end-check-drop-down-lists-fr.png" /></figure>
+<figure><img alt="Pays and state drop down lists" src="../french/images/sections/DataChecks-front-end-check-drop-down-lists-fr.png" /></figure>
 
 <p>De cette fa&ccedil;on, votre syst&egrave;me n&rsquo;accepte que des bonnes donn&eacute;es au moment m&ecirc;me o&ugrave; elles sont tap&eacute;es.  L&rsquo;approche n&rsquo;est cependant pas parfaite. Il arrive souvent que la validation du formulaire soit faite &agrave; la toute fin, lorsque toutes les questions ont &eacute;t&eacute; vues et que l&rsquo;information est envoy&eacute;e vers le serveur.   Cela peut &ecirc;tre frustrant pour l&rsquo;utilisateur de recevoir un message d&rsquo;erreur lorsqu&rsquo;il a termin&eacute; de remplir le formulaire.  Une meilleure mani&egrave;re de s&rsquo;y prendre est de v&eacute;rifier chaque champ d&egrave;s qu&rsquo;il est rempli.  Cela n&eacute;cessite par contre un code plus difficile &agrave; programmer et un &eacute;change continu de demandes de validations envoy&eacute;es au serveur et de messages d&rsquo;erreurs potentielles renvoy&eacute;s &agrave; l&rsquo;utilisateur. Comme compromis, on pourra laisser les validations plus simples se faire cot&eacute;-client et les travaux de v&eacute;rification plus compliqu&eacute;s &agrave; des traitements cot&eacute;-serveurs. Cela sera surtout n&eacute;cessaire si certaines informations ou processus d&rsquo;homologation des donn&eacute;es n&rsquo;existent que sur le serveur. On peut voir de telles situations quand des donn&eacute;es hautement s&eacute;curis&eacute;es, telles que les informations de cartes de cr&eacute;dit, sont v&eacute;rifi&eacute;es.</p>
 
@@ -178,7 +178,7 @@
 
 <p>Les dates sont aussi une cause de probl&egrave;mes et doivent &ecirc;tre v&eacute;rifi&eacute;es. Le premier probl&egrave;me est d&ucirc; aux diff&eacute;rents formats nationaux. La date 01/12/2013 repr&eacute;sente le 12 janvier 2013 aux &Eacute;tats-Unis mais le 1er d&eacute;cembre 2013 en France. Si vous &ecirc;tes chanceux vous recevrez les dates au format  international 2013-01-12 (AAAA-MM-JJ). En bonus, les dates au format standard (<a href="http://www.iso.org/iso/fr/home/standards/iso8601.htm">http://www.iso.org/iso/fr/home/standards/iso8601.htm</a>) peuvent &ecirc;tre ordonn&eacute;es m&ecirc;me lorsqu&rsquo;elles sont entrepos&eacute;es en tant que texte. Cependant, si vous n&rsquo;avez pas cette chance, il sera important de s&rsquo;assurer que vous sachiez quelles p&eacute;riodes sont r&eacute;ellement repr&eacute;senter par les dates que vous recevez, surtout si vous recevez des dates d&rsquo;utilisateurs de diff&eacute;rents pays chacun utilisant donc un format national diff&eacute;rent des autres. Une bonne mani&egrave;re de g&eacute;rer cette difficult&eacute;, si vous concevez le formulaire de saisie de donn&eacute;es, est de transformer les champs d&rsquo;entr&eacute;e de dates en boutons calendrier, afin que les utilisateurs y s&eacute;lectionnent les dates plut&ocirc;t que de les taper manuellement au clavier. Une alternative consiste &agrave; montrer le masque de donn&eacute;e attendu &agrave; l&rsquo;utilisateur afin de le guider lorsqu&rsquo;il remplit le champ.</p>
 
-<figure><img alt="Examples of input fields" src="../images/sections/DataChecks-date-format-fr.png" /></figure>
+<figure><img alt="Examples of input fields" src="../french/images/sections/DataChecks-date-format-fr.png" /></figure>
 
 <p>Une t&acirc;che de validation que vous rencontrerez probablement est l&rsquo;analyse et la v&eacute;rification du travail d&rsquo;un tiers afin de vous assurer que les visualisations et les chiffres ont vraiment du sens.  Cela pourra se produire &agrave; votre travail si vous devez valider le travail de coll&egrave;gues ou en ligne si les visualisations publi&eacute;es fournissent les donn&eacute;es sources afin que vous puissiez faire vos propres analyses. Dans les deux cas, la premi&egrave;re v&eacute;rification consiste &agrave; recalculer les totaux.  Ensuite, gardez un &oelig;il critique sur les visualisations : les valeurs ont-elles du sens, sont-elles en ligne avec l&rsquo;histoire racont&eacute;e par la visualisation ou la contredisent-elles ? Les validations ne concernent pas seulement la recherche d&rsquo;erreurs.  La compr&eacute;hension des donn&eacute;es peut aussi en &ecirc;tre le but. Cela vous donnera une bonne exp&eacute;rience quand vous ferez vos propres validations.  C&rsquo;est d&rsquo;ailleurs la premi&egrave;re chose &agrave; essayer lorsque quelqu&rsquo;un vous fournit un rapport.  Il faut toujours s&rsquo;assurer de la validit&eacute; des donn&eacute;es.</p>
 
